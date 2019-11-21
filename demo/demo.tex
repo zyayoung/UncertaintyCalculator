@@ -1,0 +1,32 @@
+To find the uncertainty of $P_{in}=P \left(h w + \log{\left(\frac{w}{h} \right)}\right)$, the partial derivatives are first calculated. Sample calculation is based on the first row of Table 1 where $P=150~\text{W}$, $w=0.258~\text{m}$, $h=0.211~\text{m}$
+
+% unc
+\begin{equation*}
+\begin{aligned}
+\left(\frac{\partial P_{in}}{\partial P}\right)^2&=\left(h w + \log{\left(\frac{w}{h} \right)}\right)^2=\left(0.211 \cdot 0.258 + \log{\left(\frac{0.258}{0.211} \right)}\right)^2=\left(0.26\right)^2=0.065~\text{m}^{4}\\
+\left(\frac{\partial P_{in}}{\partial w}\right)^2&=\left(P \left(h + \frac{1}{w}\right)\right)^2=\left(150 \cdot \left(0.211 + \frac{1}{0.258}\right)\right)^2=\left(6.1 \cdot 10^{2}\right)^2=3.8 \cdot 10^{5}~\left(\text{m} + \frac{1}{\text{m}}\right)^{2} \text{W}^{2}\\
+\left(\frac{\partial P_{in}}{\partial h}\right)^2&=\left(P \left(w - \frac{1}{h}\right)\right)^2=\left(150 \cdot \left(0.258 - \frac{1}{0.211}\right)\right)^2=\left(-6.7 
+\cdot 10^{2}\right)^2=4.5 \cdot 10^{5}~\left(\text{m} - \frac{1}{\text{m}}\right)^{2} \text{W}^{2}\\
+\end{aligned}
+\end{equation*}
+
+Then, the uncertainty of $P_{in}$ is given by the following formula where $u_{P}=36~\text{W}$, $u_{w}=0.001~\text{m}$, $u_{h}=0.001~\text{m}$
+
+\begin{equation*}
+\begin{aligned}
+u_{P_{in}}&=\sqrt{
+\left(\frac{\partial P_{in}}{\partial P}\right)^2{u_P}^2+\left(\frac{\partial P_{in}}{\partial w}\right)^2{u_w}^2+\left(\frac{\partial P_{in}}{\partial h}\right)^2{u_h}^2}\\
+&=\sqrt{3.8 \cdot 10^{5} \cdot 0.001^{2} + 4.5 \cdot 10^{5} \cdot 0.001^{2} + 0.065 \cdot 36^{2}}\\
+&=9.~\text{m}^{2} \text{W}
+\end{aligned}
+\end{equation*}
+
+% result
+\begin{equation*}
+\begin{aligned}
+P_{in}&=P \left(h w + \log{\left(\frac{w}{h} \right)}\right)\\
+&=150 \cdot \left(0.211 \cdot 0.258 + \log{\left(\frac{0.258}{0.211} \right)}\right)\\
+% TODO: Fix sf
+&=38.3309 \pm 9.~\text{m}^{2} \text{W}
+\end{aligned}
+\end{equation*}
