@@ -1,12 +1,6 @@
 # Standalone Uncertainty Calculator
 
-Generate sample uncertainly calculation from equation.
-
-## Demo
-
-![](demo/demo.png)
-
-[code](demo/demo.tex)
+Generate sample uncertainly calculation from equation and values.
 
 ## Features
 
@@ -14,8 +8,14 @@ Generate sample uncertainly calculation from equation.
 - [x] Latex code generation
 - [x] Sample numerical calculation
 - [x] Simple description of calculation
-- [x] Unit propagation
+- [ ] Unit propagation
 - [ ] Significant figure
+
+## Demo
+
+![](demo/demo.png)
+
+[code](demo/demo.tex)
 
 ## Usage
 
