@@ -1,4 +1,4 @@
-# Standalone Uncertainty Calculator
+# Uncertainty Calculator
 
 Generate sample uncertainly calculation from equation and values.
 
